@@ -1,0 +1,26 @@
+{
+  "name": "logging-middleware",
+  "version": "1.0.0",
+  "description": "Reusable logging client that ships structured logs to the evaluation log service.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
