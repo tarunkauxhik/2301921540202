@@ -1,0 +1,10 @@
+node_modules/
+notification-app-be/dist/
+notification-frontend/dist/
+.env
+.env.local
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
